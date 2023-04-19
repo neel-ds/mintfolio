@@ -21,16 +21,18 @@ const Header = () => {
       <nav className="fixed z-10 w-full mx-auto bg-white/40 bg-opacity-80 border-gray-200 px-2 sm:px-4 py-2.5 rounded drop-shadow-lg">
         <div className="max-w-[1080px] container flex flex-wrap justify-between items-center mx-auto">
           <Link href="/" className="flex items-center flex-1">
-            <span className="flex flex-row items-center self-center text-xl font-bold whitespace-nowrap text-[#732fff] hover:text-[#932fff]">
-              <Image
-                src="/mintfolio.png"
-                width="50"
-                height="50"
-                className="mr-4"
-                alt="Logo"
-              />
-              mintfolio
-            </span>
+            <div className="flex flex-row items-center self-center text-xl font-bold whitespace-nowrap text-[#732fff] hover:text-[#932fff]">
+              <div>
+                <Image
+                  src="/mintfolio.png"
+                  width="50"
+                  height="50"
+                  className="mr-4"
+                  alt="Logo"
+                />
+              </div>
+              <div className="hidden sm:block">mintfolio</div>
+            </div>
           </Link>
           <div className="flex md:order-2" style={{ marginLeft: "2rem" }}>
             <ConnectButton />

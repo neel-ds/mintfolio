@@ -8,21 +8,12 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-md text-gray-600 sm:text-center">
             © {new Date().getFullYear()}{" "}
-            <Link href="/" className="hover:text-gray-800">
+            <Link href="https://github.com/neel-ds/mintfolio"
+              target="_blank" className="hover:text-gray-800">
               mintfolio
             </Link>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a
-              href="https://github.com/neel-ds/mintfolio"
-              target="_blank"
-              className="text-gray-600 hover:text-gray-800"
-              rel="noreferrer"
-            >
-              <AiFillGithub size={25} />
-            </a>
-          </div>
         </div>
       </div>
     </footer>
