@@ -16,6 +16,7 @@ const IMAGE =
 export default function Mint() {
   const _mintAmount = 1;
   const toast = useToast();
+
   const { config } = usePrepareContractWrite({
     address: CONTRACT_ADDRESS,
     abi: abi,
