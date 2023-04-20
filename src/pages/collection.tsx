@@ -91,7 +91,9 @@ export default function Collection() {
       runApp();
       console.log("Success", result);
       console.log("response", Number(response as any));
-      setShardeumBalance(Number(response as any));
+      if (!isNaN(Number(response))) {
+        setShardeumBalance(Number(response));
+      }
     },
   });
 
